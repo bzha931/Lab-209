@@ -13,6 +13,8 @@
 
 void adc_init();
 uint16_t adc_read(uint8_t chan);
+uint16_t adc_convert_mv(uint16_t value);
+
 
 
 #endif /* ADC_H_ */
