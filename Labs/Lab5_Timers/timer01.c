@@ -12,7 +12,13 @@
 #include <stdint.h>
 
 ISR(TIMER0_COMPA_vect){
-	led_toggle();
+	static uint8_t counter = 0;
+	counter++;
+	
+	if(counter >= 10){
+		led_toggle();
+		counter = 0;
+	}
 }
 void timer0_init(){
 	OCR0A = 77;
