@@ -20,13 +20,10 @@ int main(void)
 		DDRC = 0X00;
 		DDRD = 0X00;
 	timer0_init();
-	
+	sei();
     while (1) 
     {
-		if (timer0_check_clear_compare())
-		{
-			led_toggle();
-		}
+		
     }
 }
 
