@@ -14,6 +14,4 @@
 
 void timer0_init();
 
-uint8_t timer0_check_clear_compare();
-
 #endif /* TIMER0_H_ */
